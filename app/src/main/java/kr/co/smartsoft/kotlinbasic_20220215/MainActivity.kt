@@ -33,10 +33,10 @@ class MainActivity : AppCompatActivity() {
 
             myName = "이성노"
 
-            val friendName: String
-            friendName = "이선생"
+//            val friendName: String
+//            friendName = "이선생"
 //            friendName = "김성생"  val에는 새 값 교체 불가
-
+            val friendName = "이선생"
             Toast.makeText(this, friendName, Toast.LENGTH_SHORT).show()
 
             var myBirthYear : Int
@@ -44,9 +44,22 @@ class MainActivity : AppCompatActivity() {
 
             var myHeight : Double
             myHeight = 170.0
+        }
 
+        btnCondition.setOnClickListener {
+//            조건문 연습
+            val userAge = 17
 
+//            사용자의 나이가 20살 이상? 맞으면 성인입니다. 토스트로
 
+            if (userAge >= 20) {
+//                사용자 나이가 20살 이상일때만 실행할 내용.
+                Toast.makeText(this, "성인입니다.", Toast.LENGTH_SHORT).show()
+            }
+            else {
+//                위의 질문이 틀렸을때만 실행할 내용
+                Toast.makeText(this, "미성년자입니다.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
