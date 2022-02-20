@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btnLog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="로그 찍어보기"/>
