@@ -56,9 +56,18 @@ class MainActivity : AppCompatActivity() {
 //                사용자 나이가 20살 이상일때만 실행할 내용.
                 Toast.makeText(this, "성인입니다.", Toast.LENGTH_SHORT).show()
             }
+            else if (userAge >= 17) {
+                Toast.makeText(this, "고등학생입니다.", Toast.LENGTH_SHORT).show()
+            }
+            else if (userAge >= 14) {
+                Toast.makeText(this, "중학생입니다.", Toast.LENGTH_SHORT).show()
+            }
+            else if (userAge >= 8) {
+                Toast.makeText(this, "초등학생입니다.", Toast.LENGTH_SHORT).show()
+            }
             else {
 //                위의 질문이 틀렸을때만 실행할 내용
-                Toast.makeText(this, "미성년자입니다.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "미취학 아동 입니다.", Toast.LENGTH_SHORT).show()
             }
         }
     }
