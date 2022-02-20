@@ -28,6 +28,25 @@ class MainActivity : AppCompatActivity() {
         
         btnVariable.setOnClickListener { 
 //            변수의 연습 시작점
+//            본인의 이름을 변수에 담아보자 => 토스트로 띄우자.
+            var myName : String
+
+            myName = "이성노"
+
+            val friendName: String
+            friendName = "이선생"
+//            friendName = "김성생"  val에는 새 값 교체 불가
+
+            Toast.makeText(this, friendName, Toast.LENGTH_SHORT).show()
+
+            var myBirthYear : Int
+            myBirthYear = 1988
+
+            var myHeight : Double
+            myHeight = 170.0
+
+
+
         }
     }
 }
