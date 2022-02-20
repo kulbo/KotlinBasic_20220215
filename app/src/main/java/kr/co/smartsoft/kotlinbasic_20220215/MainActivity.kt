@@ -23,7 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         btnToast.setOnClickListener {
             Log.d("메이화면", "토스트 버튼")
-            Toast.makeText(this, "토스트를 띄워봅니다.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "토스트를 뛰워봅니다.", Toast.LENGTH_SHORT).show()
+        }
+        
+        btnVariable.setOnClickListener { 
+//            변수의 연습 시작점
         }
     }
 }
