@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,13 @@ class MainActivity : AppCompatActivity() {
         btnLog.setOnClickListener {
 //            로그를 찍어보는 기능 실행 => btnLog가 클릭될 때 마다 실행
             Log.d("메인화면","로그 버튼 눌림")
+            Log.d("메인화면","로그 찍어 보기")
+            Log.e("메이화면","e(에러로그) 찍어보기")
+        }
+
+        btnToast.setOnClickListener {
+            Log.d("메이화면", "토스트 버튼")
+            Toast.makeText(this, "토스트를 띄워봅니다.", Toast.LENGTH_SHORT).show()
         }
     }
 }
